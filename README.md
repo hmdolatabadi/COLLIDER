@@ -77,11 +77,11 @@ Parameters:
 The primary results of this work are given in the table below. In each multi-row, we give our results for a particular attack type, where we compare a vanilla training vs. training with gradient-based coresets vs. the full COLLIDER objective. As shown, COLLIDER reduces the threat of backdoor attacks significantly.
 
 <p align="center">
-    <em>Clean test accuracy (ACC) and attack success rate (ASR) in % for backdoor data poisonings on CIFAR-10 (BadNets and label-consistent) and SVHN (sinusoidal strips) datasets.
+    <em>Clean test accuracy (ACC) and attack success rate (ASR) in % for backdoor data poisonings on CIFAR-10 (BadNets, label-consistent, and WANet) and SVHN (sinusoidal strips) datasets.
 		The results show the mean and standard deviation for 5 different seeds.
-		The poisoned data injection rate is 10%.
+		The poisoned data injection rate is 10% for BadNets, label-consistent and sinusoidal strips, while it is 40% for WANet.
 		For BadNets and label-consistent attacks, the coreset size is 0.3.
-            It is 0.4 for sinusoidal strips.</em>
+    It is 0.4 for WANet and sinusoidal strips.</em>
 </p>
 <table style="width:750px" align="center">
 <tbody>
@@ -129,20 +129,36 @@ The primary results of this work are given in the table below. In each multi-row
 <td style="text-align:center">82.11&plusmn0.62</td>
 <td style="text-align:center">5.19&plusmn1.08</td>
 </tr>
+<tr class="odd">
+<th style="text-align:left" rowspan="3">WANet</th>
+<th style="text-align:center" rowspan="3">CIFAR-10</th>
+<td style="text-align:center">Vanilla</td>
+<td style="text-align:center">91.63&plusmn0.28</td>
+<td style="text-align:center">92.24&plusmn1.74</td>
+</tr>
+<tr class="even">
+<td style="text-align:center">Coresets</td>
+<td style="text-align:center">86.04&plusmn0.89</td>
+<td style="text-align:center">5.73&plusmn2.78</td>
 </tr>
 <tr class="odd">
+<td style="text-align:center">COLLIDER</td>
+<td style="text-align:center">84.27&plusmn0.55</td>
+<td style="text-align:center">4.29&plusmn2.54</td>
+</tr>
+<tr class="even">
 <th style="text-align:left" rowspan="3">Sinusoidal Strips </th>
 <th style="text-align:center" rowspan="3">SVHN</th>
 <td style="text-align:center">Vanilla</td>
 <td style="text-align:center">95.79&plusmn0.20</td>
 <td style="text-align:center">77.35&plusmn3.68</td>
 </tr>
-<tr class="even">
+<tr class="odd">
 <td style="text-align:center">Coresets</td>
 <td style="text-align:center">92.30&plusmn0.19</td>
 <td style="text-align:center">24.30&plusmn8.15</td>
 </tr>
-<tr class="odd">
+<tr class="even">
 <td style="text-align:center">COLLIDER</td>
 <td style="text-align:center">89.74&plusmn0.31</td>
 <td style="text-align:center">6.20&plusmn3.69</td>

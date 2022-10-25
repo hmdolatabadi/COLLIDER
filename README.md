@@ -1,10 +1,10 @@
 ## COLLIDER: A Robust Training Framework for Backdoor Data
 *Hadi M. Dolatabadi, Sarah Erfani, and Christopher Leckie 2022*
 
-[![arXiv](http://img.shields.io/badge/arXiv-22xx.xxxxx-B31B1B.svg)](https://arxiv.org/abs/22xx.xxxxx)
+[![arXiv](http://img.shields.io/badge/arXiv-22xx.xxxxx-B31B1B.svg)](https://arxiv.org/abs/2210.06704)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
-This repository contains the official pytorch implementation of the ACCV 2022 paper [_COLLIDER: A Robust Training Framework for Backdoor Data_]().
+This repository contains the official pytorch implementation of the ACCV 2022 paper [_COLLIDER: A Robust Training Framework for Backdoor Data_](https://arxiv.org/abs/2210.06704).
 
 <p align="center">
   <img src="./misc/COLLIDER.png" width="75%">
